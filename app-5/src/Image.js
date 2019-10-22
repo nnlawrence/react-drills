@@ -1,12 +1,22 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-export default class Image extends Component {
-    render(){
+const Image = (props) => {
     return (
         <div>
-        <img src={this.props.myImage} />
-        <h1>Hello Swan</h1>
+            <img src={props.img} />
         </div>
     )
 }
-}
+
+export default Image;
+
+// export default class Image extends Component {
+//     render(){
+//     return (
+//         <div>
+//         <img src={this.props.myImage} />
+//         <h1>Hello Swan</h1>
+//         </div>
+//     )
+// }
+// }
