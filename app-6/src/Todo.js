@@ -1,12 +1,19 @@
-import React from 'react'
-​
-function Todo(props){
-    const {todo} = props
-    return(
+import React, {useState} from 'react'
+
+const Todo = (props) => {
+    return (
         <div>
-            {todo}
+            {props.task}
         </div>
     )
 }
-​
+// function Todo(props){
+//     const {todo} = props
+//     return(
+//         <div>
+//             {todo}
+//         </div>
+//     )
+// }
+
 export default Todo
